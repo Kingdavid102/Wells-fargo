@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wells Fargo - Transfer Money</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="transfer-page">
+    <div class="mobile-header">
+
+
+    <div class="transfer-container">
+        <div class="page-header">
+            <h1>Transfer Money</h1>
+        </div>
+
+        <div class="transfer-content">
+            <div class="transfer-icon">
+                <img src="logo.png?height=60&width=100" alt="Transfer Icon" class="money-icon">
+            </div>
+
+            <div class="fdic-notice">
+                <div class="fdic-logo">FDIC</div>
+                <div class="fdic-text">FDIC-Insured - Backed by the full faith and credit of the U.S. Government</div>
+            </div>
+
+            <form id="transferForm" class="transfer-form">
+                <div class="form-group">
+                    <label for="fromAccount">Transfer from</label>
+                    <div class="select-wrapper">
+                        <select id="fromAccount" name="fromAccount" class="form-select">
+                            <option value="checking">Everyday Checking...5688 -$3,150,000.00</option>
+                            <option value="savings">Wells Fargo Way2Save Savings...1902 - $0.00</option>
+                            <option value="cash">Wells Fargo Active Cash Card...7654 - $0.00</option>
+                            <option value="investment">Investment...1902 - $0.00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="external-account-link">
+                    <span>Need to add another account to make this transfer?</span>
+                    <a href="#" class="link">Add an external account</a>
+                </div>
+
+                <div class="form-group">
+                    <label for="toAccountNumber">Transfer to</label>
+                    <div class="transfer-to-fields">
+                        <input type="text" id="toAccountNumber" name="toAccountNumber" placeholder="Account Number" class="form-input">
+                        <input type="text" id="routingNumber" name="routingNumber" placeholder="Routing Number" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="frequency">Frequency</label>
+                        <div class="select-wrapper">
+                            <select id="frequency" name="frequency" class="form-select">
+                                <option value="oneTime">One Time</option>
+                                <option value="weekly">Weekly</option>
+                                <option value="biweekly">Bi-weekly</option>
+                                <option value="monthly">Monthly</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group half">
+                        <label for="transferDate">Transfer date</label>
+                        <input type="text" id="transferDate" name="transferDate" value="18 May 2025" class="form-input" readonly>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="text" id="amount" name="amount" placeholder="Enter amount" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="memo">Memo</label>
+                    <textarea id="memo" name="memo" class="form-textarea"></textarea>
+                </div>
+
+                <div class="form-disclaimer">
+                    By confirming, I authorize Wells Fargo to transfer my money as indicated above.
+                </div>
+
+                <button type="submit" class="btn btn-confirm">
+                    <span class="btn-icon">✓</span>
+                    Click to Confirm
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mobile-nav">
+        <a href="dashboard.html" class="nav-item">
+            <div class="nav-icon">🏠</div>
+            <div class="nav-label">Home</div>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon">💳</div>
+            <div class="nav-label">Card</div>
+        </a>
+        <a href="transfer.html" class="nav-item active">
+            <div class="nav-icon">↔️</div>
+            <div class="nav-label">Transfer</div>
+        </a>
+        <a href="transactions.html" class="nav-item">
+            <div class="nav-icon">📋</div>
+            <div class="nav-label">History</div>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <div class="nav-icon">👤</div>
+            <div class="nav-label">Profile</div>
+        </a>
+    </div>
+
+
+
+    <div id="transferErrorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-message">
+                [The transaction could not be completed due to a fee is applied to be paid from the recipient local currency before the transaction will be successfully processed. Please contact Support for assistance.]
+            </div>
+            <button class="modal-close">Close</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/transactions.js"></script>
+</body>
+</html>

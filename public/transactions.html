@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wells Fargo - Transaction History</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="transactions-page">
+    <div class="mobile-header">
+       
+
+    <div class="transactions-container">
+        <div class="page-header">
+            <h1>Transaction History</h1>
+        </div>
+
+        <div class="transactions-content">
+            <div class="transactions-section">
+                <h2>Recent Transactions</h2>
+                
+                <div id="transactionsList" class="transactions-list">
+                    <!-- Transactions will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-nav">
+        <a href="dashboard.html" class="nav-item">
+            <div class="nav-icon">🏠</div>
+            <div class="nav-label">Home</div>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon">💳</div>
+            <div class="nav-label">Card</div>
+        </a>
+        <a href="transfer.html" class="nav-item">
+            <div class="nav-icon">↔️</div>
+            <div class="nav-label">Transfer</div>
+        </a>
+        <a href="transactions.html" class="nav-item active">
+            <div class="nav-icon">📋</div>
+            <div class="nav-label">History</div>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <div class="nav-icon">👤</div>
+            <div class="nav-label">Profile</div>
+        </a>
+    </div>
+
+    <div class="mobile-footer">
+        <div class="browser-nav">
+            <span class="nav-btn">←</span>
+            <span class="nav-btn">→</span>
+            <span class="nav-btn">↑</span>
+            <span class="nav-btn">📚</span>
+            <span class="nav-btn">📑</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/transactions.js"></script>
+</body>
+</html>

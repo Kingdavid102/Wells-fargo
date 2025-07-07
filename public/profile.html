@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus Bank - Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="profile-page">
+    <div class="mobile-header">
+       
+
+    <div class="profile-container">
+        <div class="page-header">
+            <h1>My Profile</h1>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-avatar-section">
+                <div class="profile-avatar">
+                    <img id="profileImage" src="avatar.png" alt="Profile Avatar" class="avatar-img">
+                    <div class="avatar-overlay">
+                        <span class="avatar-edit-icon">📷</span>
+                    </div>
+                </div>
+                <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
+                <button id="changeAvatarBtn" class="btn btn-outline">Change Photo</button>
+            </div>
+
+            <div class="account-info-section">
+                <div class="account-info-card">
+                    <div class="account-info-header">Account Information</div>
+                    <div class="account-info-item">
+                        <div class="info-label">Account Number</div>
+                        <div id="profileAccountNumber" class="info-value">Loading...</div>
+                    </div>
+                    <div class="account-info-item">
+                        <div class="info-label">Account Status</div>
+                        <div id="profileAccountStatus" class="info-value">Loading...</div>
+                    </div>
+                    <div class="account-info-item">
+                        <div class="info-label">Member Since</div>
+                        <div id="profileMemberSince" class="info-value">Loading...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-form-section">
+                <form id="profileForm" class="profile-form">
+                    <div class="form-group">
+                        <label for="profileFullName">Full Name</label>
+                        <input type="text" id="profileFullName" name="fullName" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="profileEmail">Email Address</label>
+                        <input type="email" id="profileEmail" name="email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="profilePhone">Phone Number</label>
+                        <input type="tel" id="profilePhone" name="phone" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="profileUsername">Username</label>
+                        <input type="text" id="profileUsername" name="username" class="form-input">
+                    </div>
+                    
+                    <div class="password-section">
+                        <div class="section-header">Change Password</div>
+                        <div class="form-group">
+                            <label for="currentPassword">Current Password</label>
+                            <input type="password" id="currentPassword" name="currentPassword" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">New Password</label>
+                            <input type="password" id="newPassword" name="newPassword" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmNewPassword">Confirm New Password</label>
+                            <input type="password" id="confirmNewPassword" name="confirmNewPassword" class="form-input">
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </div>
+                </form>
+                
+                <div class="logout-section">
+                    <button id="logoutBtn" class="btn btn-outline logout-btn">
+                        <span class="btn-icon">🚪</span>
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-nav">
+        <a href="dashboard.html" class="nav-item">
+            <div class="nav-icon">🏠</div>
+            <div class="nav-label">Home</div>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon">💳</div>
+            <div class="nav-label">Card</div>
+        </a>
+        <a href="transfer.html" class="nav-item">
+            <div class="nav-icon">↔️</div>
+            <div class="nav-label">Transfer</div>
+        </a>
+        <a href="transactions.html" class="nav-item">
+            <div class="nav-icon">📋</div>
+            <div class="nav-label">History</div>
+        </a>
+        <a href="profile.html" class="nav-item active">
+            <div class="nav-icon">👤</div>
+            <div class="nav-label">Profile</div>
+        </a>
+    </div>
+
+
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-message">
+                Changes saved successfully!
+            </div>
+            <button class="modal-close">Close</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

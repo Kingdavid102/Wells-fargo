@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus Bank - Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+    <div class="mobile-header">
+        
+
+    <div class="login-container">
+        <div class="bank-header">
+            <div class="bank-logo">
+                <img src="logo.png" alt="Zeus Bank Logo" class="zeus-logo">
+            </div>
+            <h1>ZEUS BANK</h1>
+            <div class="greeting">Create Account</div>
+        </div>
+
+        <div class="login-form-container">
+            <form id="registerForm" class="login-form">
+                <div class="form-group">
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group" style="position: relative;">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span class="show-password">Show</span>
+                </div>
+                <div class="form-group" style="position: relative;">
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="termsAgree" name="termsAgree" required>
+                    <label for="termsAgree">I agree to the Terms and Conditions</label>
+                </div>
+                <div class="form-actions" style="display: flex; gap: 10px;">
+                    <button type="button" class="btn btn-outline" onclick="window.location.href='login.html'" style="flex: 1;">Sign In</button>
+                    <button type="submit" class="btn btn-primary" style="flex: 1;">Create Account</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="login-features">
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <div class="feature-content">
+                    <h3>Explore our products</h3>
+                    <a href="#">Find your fit</a>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <div class="feature-content">
+                    <h3>Earn 20K bonus points</h3>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-footer">
+        <div class="browser-nav">
+            <span class="nav-btn">←</span>
+            <span class="nav-btn">→</span>
+            <span class="nav-btn">↑</span>
+            <span class="nav-btn">📚</span>
+            <span class="nav-btn">📑</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

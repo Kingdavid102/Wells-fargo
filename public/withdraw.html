@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus Bank - Withdraw Money</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="withdraw-page">
+    <div class="mobile-header">
+        <div class="status-bar">
+            <div class="time">19:09</div>
+            <div class="network">
+                <span class="signal">LTE</span>
+                <span class="battery">27</span>
+            </div>
+        </div>
+        <div class="browser-bar">
+            <div class="browser-controls">
+                <span class="browser-icon">◻️</span>
+            </div>
+            <div class="url-bar">my-zeusbank.com</div>
+            <div class="browser-controls">
+                <span class="browser-icon">↻</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="withdraw-container">
+        <div class="page-header">
+            <h1>Withdraw Money</h1>
+        </div>
+
+        <div class="withdraw-content">
+            <div class="withdraw-icon">
+                <img src="/placeholder.svg?height=60&width=60" alt="Withdraw Icon" class="money-icon">
+            </div>
+
+            <div class="fdic-notice">
+                <div class="fdic-logo">FDIC</div>
+                <div class="fdic-text">FDIC-Insured - Backed by the full faith and credit of the U.S. Government</div>
+            </div>
+
+            <form id="withdrawForm" class="withdraw-form">
+                <div class="form-group">
+                    <label for="withdrawAccount">Withdraw from</label>
+                    <div class="select-wrapper">
+                        <select id="withdrawAccount" name="withdrawAccount" class="form-select">
+                            <option value="">Select Account</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="withdrawAmount">Amount</label>
+                    <input type="text" id="withdrawAmount" name="withdrawAmount" placeholder="Enter amount" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="withdrawMethod">Withdrawal Method</label>
+                    <div class="select-wrapper">
+                        <select id="withdrawMethod" name="withdrawMethod" class="form-select">
+                            <option value="bank">Bank Transfer</option>
+                            <option value="cash">Cash Pickup</option>
+                            <option value="mobile">Mobile Money</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="withdrawDescription">Description</label>
+                    <textarea id="withdrawDescription" name="withdrawDescription" class="form-textarea"></textarea>
+                </div>
+
+                <div class="form-disclaimer">
+                    By confirming, I authorize Zeus Bank to withdraw the amount as indicated above.
+                </div>
+
+                <button type="submit" class="btn btn-confirm">
+                    <span class="btn-icon">✓</span>
+                    Withdraw Money
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mobile-nav">
+        <a href="dashboard.html" class="nav-item">
+            <div class="nav-icon">🏠</div>
+            <div class="nav-label">Home</div>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon">💳</div>
+            <div class="nav-label">Card</div>
+        </a>
+        <a href="transfer.html" class="nav-item">
+            <div class="nav-icon">↔️</div>
+            <div class="nav-label">Transfer</div>
+        </a>
+        <a href="transactions.html" class="nav-item">
+            <div class="nav-icon">📋</div>
+            <div class="nav-label">History</div>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <div class="nav-icon">👤</div>
+            <div class="nav-label">Profile</div>
+        </a>
+    </div>
+
+    <div class="mobile-footer">
+        <div class="browser-nav">
+            <span class="nav-btn">←</span>
+            <span class="nav-btn">→</span>
+            <span class="nav-btn">↑</span>
+            <span class="nav-btn">📚</span>
+            <span class="nav-btn">📑</span>
+        </div>
+    </div>
+
+    <div id="withdrawErrorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-message">
+                [The withdrawal could not be completed due to a fee that needs to be paid before the transaction can be processed. Please contact Support for assistance.]
+            </div>
+            <button class="modal-close">Close</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

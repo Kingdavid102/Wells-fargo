@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus Bank - Fund Account</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fund-page">
+    <div class="mobile-header">
+        <div class="status-bar">
+            <div class="time">19:09</div>
+            <div class="network">
+                <span class="signal">LTE</span>
+                <span class="battery">27</span>
+            </div>
+        </div>
+        <div class="browser-bar">
+            <div class="browser-controls">
+                <span class="browser-icon">◻️</span>
+            </div>
+            <div class="url-bar">my-zeusbank.com</div>
+            <div class="browser-controls">
+                <span class="browser-icon">↻</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="fund-container">
+        <div class="page-header">
+            <h1>Fund Account</h1>
+        </div>
+
+        <div class="fund-content">
+            <div class="fund-icon">
+                <img src="/placeholder.svg?height=60&width=60" alt="Fund Icon" class="money-icon">
+            </div>
+
+            <form id="fundForm" class="fund-form">
+                <div class="form-group">
+                    <label for="accountToFund">Account to Fund</label>
+                    <div class="select-wrapper">
+                        <select id="accountToFund" name="accountToFund" class="form-select">
+                            <option value="">Select Account</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fundAmount">Amount</label>
+                    <input type="text" id="fundAmount" name="fundAmount" placeholder="Enter amount" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="fundDescription">Description</label>
+                    <textarea id="fundDescription" name="fundDescription" class="form-textarea"></textarea>
+                </div>
+
+                <div class="form-disclaimer">
+                    By confirming, I authorize Zeus Bank to fund the account as indicated above.
+                </div>
+
+                <button type="submit" class="btn btn-confirm">
+                    <span class="btn-icon">✓</span>
+                    Fund Account
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mobile-nav">
+        <a href="dashboard.html" class="nav-item">
+            <div class="nav-icon">🏠</div>
+            <div class="nav-label">Home</div>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon">💳</div>
+            <div class="nav-label">Card</div>
+        </a>
+        <a href="transfer.html" class="nav-item">
+            <div class="nav-icon">↔️</div>
+            <div class="nav-label">Transfer</div>
+        </a>
+        <a href="transactions.html" class="nav-item">
+            <div class="nav-icon">📋</div>
+            <div class="nav-label">History</div>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon">👤</div>
+            <div class="nav-label">Profile</div>
+        </a>
+    </div>
+
+    <div class="mobile-footer">
+        <div class="browser-nav">
+            <span class="nav-btn">←</span>
+            <span class="nav-btn">→</span>
+            <span class="nav-btn">↑</span>
+            <span class="nav-btn">📚</span>
+            <span class="nav-btn">📑</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
