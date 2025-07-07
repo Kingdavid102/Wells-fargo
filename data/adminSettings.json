@@ -1,0 +1,13 @@
+{
+  "interbankTransferStatus": "successful",
+  "withdrawalStatus": "pending",
+  "defaultAccountStatus": "pending",
+  "transactionFee": 1.5,
+  "dailyTransferLimit": 50000,
+  "initialBalance": 0,
+  "accountNumberPrefix": "5588",
+  "emailNotifications": true,
+  "smsNotifications": true,
+  "adminAlertThreshold": 10000,
+  "defaultTransactionStatus": "pending"
+}

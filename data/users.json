@@ -1,20 +1,120 @@
 [
   {
-    "id": 1,
-    "name": "Demo User",
-    "email": "admin@example.com",
-    "password": "cbladmin001",
-    "accountNumber": "7849123456",
-    "routingNumber": "663",
-    "balance": 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    "id": "1747662901721",
+    "fullName": "Emmanuel Henshaw",
+    "email": "emmy@gmail.com",
+    "phone": "09125042727",
+    "username": "EmmyHenz",
+    "password": "11111111",
+    "accountNumber": "55886859",
+    "balance": 1200,
+    "status": "pending",
+    "transactions": [
+      {
+        "id": "1747674588765292",
+        "fromAccount": "55886859",
+        "toAccount": "EXTERNAL",
+        "amount": 400,
+        "type": "withdrawal",
+        "status": "pending",
+        "memo": "500",
+        "date": "2025-05-19T17:09:48.767Z"
+      },
+      {
+        "id": "174766399783181",
+        "fromAccount": "55886859",
+        "toAccount": "55888717",
+        "amount": 100,
+        "type": "transfer",
+        "status": "successful",
+        "memo": "Ha",
+        "date": "2025-05-19T14:13:17.831Z"
+      },
+      {
+        "id": "1747663906889462",
+        "fromAccount": "55886859",
+        "toAccount": "55888717",
+        "amount": 200,
+        "type": "transfer",
+        "status": "successful",
+        "memo": "Test",
+        "date": "2025-05-19T14:11:46.889Z"
+      },
+      {
+        "id": "1747663701800318",
+        "fromAccount": "ADMIN",
+        "toAccount": "55886859",
+        "amount": 1000,
+        "type": "deposit",
+        "status": "successful",
+        "memo": "Bla",
+        "date": "2025-05-19T14:08:21.800Z"
+      },
+      {
+        "id": "1747663581273573",
+        "fromAccount": "55888717",
+        "toAccount": "55886859",
+        "amount": 300,
+        "type": "deposit",
+        "status": "successful",
+        "memo": "Afa ni",
+        "date": "2025-05-19T14:06:21.273Z"
+      },
+      {
+        "id": "1747674685995601",
+        "fromAccount": "55886859",
+        "toAccount": "EXTERNAL",
+        "amount": 700,
+        "type": "withdrawal",
+        "status": "pending",
+        "memo": "Ggg",
+        "date": "2025-05-19T17:11:25.995Z"
+      }
+    ],
+    "createdAt": "2025-05-19T13:55:01.721Z"
   },
   {
-    "id": 4,
-    "name": "Emmyhenzy",
-    "email": "emmy@gmail.com",
+    "id": "1747663205210",
+    "fullName": "Emmanuel Henshaw",
+    "email": "admin@example.com",
+    "phone": "09125042727",
+    "username": "Emmy",
     "password": "11111111",
-    "accountNumber": "1972549147",
-    "routingNumber": "899",
-    "balance": 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+    "accountNumber": "55888717",
+    "balance": 669800,
+    "status": "pending",
+    "transactions": [
+      {
+        "id": "1747663581273573",
+        "fromAccount": "55888717",
+        "toAccount": "55886859",
+        "amount": 300,
+        "type": "transfer",
+        "status": "successful",
+        "memo": "Afa ni",
+        "date": "2025-05-19T14:06:21.273Z"
+      },
+      {
+        "id": "1747663436435449",
+        "fromAccount": "ADMIN",
+        "toAccount": "55888717",
+        "amount": 670000,
+        "type": "deposit",
+        "status": "successful",
+        "memo": "Afa na",
+        "date": "2025-05-19T14:03:56.436Z"
+      },
+      {
+        "id": "174766399783181",
+        "fromAccount": "55886859",
+        "toAccount": "55888717",
+        "amount": 100,
+        "type": "deposit",
+        "status": "successful",
+        "memo": "Ha",
+        "date": "2025-05-19T14:13:17.831Z"
+      }
+    ],
+    "createdAt": "2025-05-19T14:00:05.218Z"
   }
 ]
