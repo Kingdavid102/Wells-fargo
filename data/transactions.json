@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "senderId": 4,
+    "senderName": "Emmyhenzy",
+    "senderEmail": "emmy@gmail.com",
+    "recipientId": 3,
+    "recipientName": "Emmanuel Henshaw",
+    "recipientEmail": "emmy3@gmail.com",
+    "amount": 500,
+    "timestamp": "2025-05-04T17:49:29.701Z"
+  },
+  {
+    "id": 2,
+    "senderId": 4,
+    "senderName": "Emmyhenzy",
+    "senderEmail": "emmy@gmail.com",
+    "recipientId": 4,
+    "recipientName": "Emmyhenzy",
+    "recipientEmail": "emmy@gmail.com",
+    "amount": 508,
+    "timestamp": "2025-05-04T22:51:43.660Z"
+  },
+  {
+    "id": 3,
+    "senderId": 4,
+    "senderName": "Emmyhenzy",
+    "senderEmail": "emmy@gmail.com",
+    "recipientId": 3,
+    "recipientName": "Emmanuel Henshaw",
+    "recipientEmail": "emmy3@gmail.com",
+    "amount": 50000,
+    "timestamp": "2025-05-04T22:52:26.862Z"
+  },
+  {
+    "id": 4,
+    "senderId": 4,
+    "senderName": "Emmyhenzy",
+    "senderEmail": "emmy@gmail.com",
+    "recipientId": null,
+    "recipientName": "Bank Withdrawal",
+    "recipientEmail": null,
+    "amount": 305277.94,
+    "timestamp": "2025-05-04T23:05:25.805Z",
+    "type": "withdrawal"
+  }
+]
