@@ -1,0 +1,94 @@
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.auth-form {
+  background-color: var(--accent-color);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.auth-switch a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.account-created {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  display: none;
+}
+
+.account-created-content {
+  background-color: var(--accent-color);
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.account-created-content h2 {
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.account-created-content p {
+  margin-bottom: 8px;
+}
+
+.account-number {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.redirect-text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 16px;
+}

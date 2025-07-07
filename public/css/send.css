@@ -1,0 +1,231 @@
+.transfer-container {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.transfer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.transfer-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.amount-display {
+  font-size: 72px;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 40px 0;
+}
+
+.amount-display::before {
+  content: "$";
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: auto;
+}
+
+.numpad-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 24px;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.numpad-btn:active {
+  background-color: var(--accent-color);
+}
+
+.transfer-action {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 30px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.transfer-action:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+.transfer-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  width: 50%;
+}
+
+/* Account Input */
+.account-input,
+.note-input {
+  margin-bottom: 20px;
+}
+
+.account-input label,
+.note-input label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.account-input input,
+.note-input input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.account-name {
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--accent-color);
+  border-radius: 8px;
+}
+
+/* Send Options */
+.send-options {
+  margin-bottom: 20px;
+}
+
+.send-label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.send-types {
+  display: flex;
+  gap: 10px;
+}
+
+.send-type-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.send-type-btn.active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Suggested Section */
+.suggested-section {
+  margin-top: 20px;
+}
+
+.suggested-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 15px;
+}
+
+.suggested-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 15px;
+  color: white;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-detail {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
