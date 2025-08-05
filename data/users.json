@@ -1,10 +1,10 @@
 [
   {
     "id": "1747662901721",
-    "fullName": "Emmanuel Henshaw",
-    "email": "emmy@gmail.com",
-    "phone": "09125042727",
-    "username": "EmmyHenz",
+    "fullName": "cade",
+    "email": "cade@gmail.com",
+    "phone": "44555555555",
+    "username": "cade",
     "password": "11111111",
     "accountNumber": "55886859",
     "balance": 1200,
@@ -75,9 +75,9 @@
   },
   {
     "id": "1747663205210",
-    "fullName": "Emmanuel Henshaw",
+    "fullName": "cade",
     "email": "admin@example.com",
-    "phone": "09125042727",
+    "phone": "4555555555",
     "username": "Emmy",
     "password": "11111111",
     "accountNumber": "55888717",
